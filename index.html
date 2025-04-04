@@ -6,37 +6,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Sigmar&display=swap" rel="stylesheet">
 
+    <style>
+        body {
+            background: rgb(240,227,233);
+            background: linear-gradient(90deg, rgba(240,227,233,1) 0%, rgba(241,140,178,1) 100%);
+        }
 
-<style>
-    body{background: rgb(240,227,233);
-    background: linear-gradient(90deg, rgba(240,227,233,1) 0%, rgba(241,140,178,1) 100%);
-    height:100vh;
-    margin: 0;
-}
-.selfieimage{
-            text-align:center;
+        .selfieimage {
+            text-align: center;
             margin-top: 20px;
         }
 
-        img{
+        img {
             width: 200px;
             border-radius: 50px;
         }
 
-        h1{
+        h1 {
             font-family: 'Lilita One';
             text-align: center;
             margin-top: 20px;
             font-size: 50px;
         }
-        
-        h2{
+
+        h2 {
             font-family: 'Lilita One';
             text-align: center;
             margin-top: 20px;
         }
 
-        .about{
+        .about {
             max-width: 600px;
             margin: 20px auto;
             text-align: center;
@@ -54,37 +53,77 @@
         }
 
         .about p {
-          background-color: rgb(230, 190, 198);
-          border: 4px solid rgb(0, 0, 0);
-          padding: 15px;
-          margin: 15px auto;
-          border-radius: 45px;
-          font-size: 16px;
-          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(230, 190, 198);
+            border: 4px solid rgb(0, 0, 0);
+            padding: 15px;
+            margin: 15px auto;
+            border-radius: 45px;
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
-</style>
+        .nav-buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .nav-buttons button {
+            background-color: pink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-family: "Lilita One", sans-serif;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons button:hover {
+            background-color: hotpink;
+        }
+    </style>
 </head>
 
-<head>
-<body><div class="selfieimage">
-            <img src="mucio.JPG">
-        </div>
+<body>
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
 
-        <h1>
-            Gwyneth Ashley Mucio
-            </h1>
-            
-            <div class="about">
-                <h2 class="lilita-one-regular">ABOUT:</h2>
+    <div class="nav-buttons">
+        <button onclick="goToPage('contacts.html')">Contacts</button>
+        <button onclick="goToPage('blog.html')">Blog</button>
+        <button onclick="goToPage('certifications.html')">Certifications</button>
+    </div>
 
-            <p>My name is Gwyneth Ashley Pacifico Mucio, a 20-year-old from the vibrant city of Novaliches, Quezon City. Born on November 13, 2004, I have always been known for my friendly, sweet, and caring nature, with a keen eye for observing the world around me. I am an open-minded individual who enjoys connecting with people and embracing new experiences. One of my strengths is my ability to multitask efficiently, along with strong communication skills, adaptability, and creativity. Whether it’s managing multiple responsibilities or finding innovative solutions, I always strive to bring my best in everything I do!
-            </p>
+    <div class="selfieimage">
+        <img src="mucio.JPG" alt="Selfie of Gwyneth Ashley Mucio">
+    </div>
 
-            <p>
-                I aspire to build a career where I can grow, inspire others, and make a meaningful impact. I aim to use my skills in multitasking, problem-solving, and creativity to excel in my chosen field. Learning new things excites me, and I believe that every challenge is an opportunity to improve and innovate. My goal is to keep pushing myself forward, turning my passion into a profession that makes a difference.
-            </p>
+    <h1>Gwyneth Ashley Mucio</h1>
 
+    <div class="about">
+        <h2 class="lilita-one-regular">ABOUT:</h2>
 
-    </body>
-</head>
+        <p>
+            My name is Gwyneth Ashley Pacifico Mucio, a 20-year-old from the vibrant city of Novaliches, Quezon City.
+            Born on November 13, 2004, I have always been known for my friendly, sweet, and caring nature, with a keen
+            eye for observing the world around me. I am an open-minded individual who enjoys connecting with people and
+            embracing new experiences. One of my strengths is my ability to multitask efficiently, along with strong
+            communication skills, adaptability, and creativity. Whether it’s managing multiple responsibilities or finding
+            innovative solutions, I always strive to bring my best in everything I do!
+        </p>
+
+        <p>
+            I aspire to build a career where I can grow, inspire others, and make a meaningful impact. I aim to use my
+            skills in multitasking, problem-solving, and creativity to excel in my chosen field. Learning new things excites
+            me, and I believe that every challenge is an opportunity to improve and innovate. My goal is to keep pushing
+            myself forward, turning my passion into a profession that makes a difference.
+        </p>
+    </div>
+</body>
+</html>
