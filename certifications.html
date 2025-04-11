@@ -13,6 +13,35 @@
             font-family: 'Lilita One', cursive;
         }
 
+        
+        /*for return to the homepage*/
+
+    .back-home {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        text-align: center;
+    }
+
+    .arrow-icon {
+        width: 80px;
+        transform: scaleX(-1);
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .arrow-icon:hover {
+        transform: scaleX(-1) scale(1.1);
+    }
+
+    .caption {
+        margin-top: 5px;
+        font-family: 'Lilita One', sans-serif;
+        font-size: 16px;
+        color: #de5d83;
+    }
+
+     /*buttons*/
         .nav-buttons { 
             text-align: center;
             margin-top: 20px;
@@ -50,13 +79,26 @@
 </head>
 <body>
 
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
     <div class="nav-buttons">
-        <button onclick="window.location.href='index.html'">About Me</button>
-        <button onclick="window.location.href='contacts.html'">Contacts</button>
-        <button onclick="window.location.href='blog.html'">Blog</button>
-        <button onclick="window.location.href='certifications.html'">Certifications</button>
+        <button onclick="goToPage('aboutme.html')">About me</button>
+        <button onclick="goToPage('contacts.html')">Contacts</button>
+        <button onclick="goToPage('blog.html')">Blog</button>
+        <button onclick="goToPage('certifications.html')">Certifications</button>
     </div>
 
+    <div class="back-home">
+        <div class="caption">Home Page</div>
+        <a href="index.html">
+            <img src="leftarrow.gif" alt="Left arrow" class="arrow-icon">
+        </a>
+    </div>
+    
     <div class="home-text">Certifications</div>
 
 </body>

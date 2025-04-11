@@ -4,63 +4,100 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Sigmar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 
     <style>
         body {
             background: rgb(240,227,233);
             background: linear-gradient(90deg, rgba(240,227,233,1) 0%, rgba(241,140,178,1) 100%);
+            font-family: 'Lilita One', sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         .selfieimage {
             text-align: center;
             margin-top: 20px;
+            float: right;
+            margin-right: 50px;
+            margin-bottom: 20px; 
         }
 
-        img {
-            width: 200px;
-            border-radius: 50px;
-        }
+            img {
+                width: 250px; 
+                height: 250px; 
+                border-radius: 50%;
+            }
+
 
         h1 {
-            font-family: 'Lilita One';
+            font-family: 'Lilita One', sans-serif;
             text-align: center;
             margin-top: 20px;
             font-size: 50px;
+            color: #333;
         }
 
         h2 {
-            font-family: 'Lilita One';
+            font-family: 'Lilita One', sans-serif;
             text-align: center;
             margin-top: 20px;
+            font-size: 32px;
+            color: #333;
         }
 
-        .about {
-            max-width: 600px;
-            margin: 20px auto;
-            text-align: center;
-            font-style: normal;
-            font-weight: 100;
-            padding: 0 20px;
-            margin-bottom: 10px;
+        .intro {
+            text-align: left;
+            font-size: 18px;
+            color: #333;
+            margin-top: 30px;
+            padding: 10px;
         }
 
-        .lilita-one-regular {
-            font-family: "Lilita One", serif;
-            font-weight: 400;
-            font-style: normal;
-            text-align: center;
+        .hiintro h1 {
+        color: #333;
+        text-align: left;
         }
 
-        .about p {
-            background-color: rgb(230, 190, 198);
-            border: 4px solid rgb(0, 0, 0);
-            padding: 15px;
-            margin: 15px auto;
-            border-radius: 45px;
-            font-size: 16px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        .name {
+        color: #D5006D; 
         }
+
+
+        .intro p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        
+/* for see detail button*/
+        .button-link {
+        display: inline-block;
+        background-color: #D5006D;
+        color: white;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-family: 'Lilita One', sans-serif;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background-color 0.3s, transform 0.2s;
+        margin-top: 20px;
+    }
+
+    .button-link:hover {
+        background-color: hotpink;
+        transform: scale(1.05);
+    }
+
+    .button-link:active {
+        background-color: #D5006D;
+        transform: scale(1);
+    }
+
+
+    /* for see link buttons*/
 
         .nav-buttons {
             text-align: center;
@@ -84,6 +121,77 @@
         .nav-buttons button:hover {
             background-color: hotpink;
         }
+
+    /* for see detail button*/
+        .see-details {
+        position: relative;
+        text-align: left;
+        margin-top: 40px; 
+        padding-left: 50px; 
+        }
+
+    .button-link {
+        display: inline-block;
+        background-color: #f37b9f;
+        color: white;
+        padding: 20px 40px; 
+        font-size: 24px; 
+        font-family: 'Lilita One', sans-serif;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background-color 0.3s, transform 0.2s;
+        }
+
+    .button-link:hover {
+        background-color: hotpink;
+        transform: scale(1.1);
+        }
+
+    .button-link:active {
+        background-color: #D5006D;
+        transform: scale(1);
+        }
+
+        .handpoint-icon {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px; 
+}
+    
+    /* for comment button*/
+    .comment-section {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    }
+
+    .comment-section .heart-gif {
+        width: 80px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    .comment-section .comment-button {
+        background-color: #D5006D;
+        color: white;
+        padding: 12px 30px;
+        font-size: 20px;
+        font-family: 'Lilita One', sans-serif;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .comment-section .comment-button:hover {
+        background-color: #FF66B2; /* Lighter pink on hover */
+        transform: scale(1.05);
+    }
+
     </style>
 </head>
 
@@ -95,6 +203,7 @@
     </script>
 
     <div class="nav-buttons">
+        <button onclick="goToPage('aboutme.html')">About me</button>
         <button onclick="goToPage('contacts.html')">Contacts</button>
         <button onclick="goToPage('blog.html')">Blog</button>
         <button onclick="goToPage('certifications.html')">Certifications</button>
@@ -104,26 +213,33 @@
         <img src="mucio.JPG" alt="Selfie of Gwyneth Ashley Mucio">
     </div>
 
-    <h1>Gwyneth Ashley Mucio</h1>
-
-    <div class="about">
-        <h2 class="lilita-one-regular">ABOUT:</h2>
-
-        <p>
-            My name is Gwyneth Ashley Pacifico Mucio, a 20-year-old from the vibrant city of Novaliches, Quezon City.
-            Born on November 13, 2004, I have always been known for my friendly, sweet, and caring nature, with a keen
-            eye for observing the world around me. I am an open-minded individual who enjoys connecting with people and
-            embracing new experiences. One of my strengths is my ability to multitask efficiently, along with strong
-            communication skills, adaptability, and creativity. Whether it’s managing multiple responsibilities or finding
-            innovative solutions, I always strive to bring my best in everything I do!
-        </p>
-
-        <p>
-            I aspire to build a career where I can grow, inspire others, and make a meaningful impact. I aim to use my
-            skills in multitasking, problem-solving, and creativity to excel in my chosen field. Learning new things excites
-            me, and I believe that every challenge is an opportunity to improve and innovate. My goal is to keep pushing
-            myself forward, turning my passion into a profession that makes a difference.
-        </p>
+    <div class="hiintro">
+    <h1>Hi, I'm <span class="name"><br>Gwyneth Ashley Mucio</span>!</h1>
     </div>
+
+    <div class="intro">
+        <p>Welcome to my portfolio! An Information Technology tudent from St. Dominic College of Asia, passionate about learning and exploring new ideas. Feel free to learn more about me and my journey. 
+            <br><br>You can check out my certifications, blog, and more through the navigation buttons above!</p>
+        </div>
+
+        <div class="see-details">
+            <h2><a class="button-link" href="aboutme.html">See details about me</a></h2>
+        </div>
+        
+        <div style="position: fixed; bottom: 20px; left: 20px; display: flex; align-items: center;">
+            
+            <div class="comment-section">
+                <!-- Heart GIF -->
+                <img src="heart.gif" alt="Heart animation" class="heart-gif">
+            
+                <!-- Comment Button -->
+                <!-- Blank pa yung comments.html-->
+                <button onclick="goToPage('comments.html')" class="comment-button">
+                    Leave a Comment 💬
+                </button>
+            </div>
+            
+        
+
 </body>
 </html>
