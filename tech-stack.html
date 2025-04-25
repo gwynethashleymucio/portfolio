@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technology Stack - Gwyneth Mucio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hearts.css">
+    
+    <style>
+        body {
+            background: linear-gradient(90deg, rgba(240,227,233,1) 0%, rgba(241,140,178,1) 100%);
+            font-family: 'Lilita One', cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .nav-buttons button {
+            background-color: pink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-family: "Lilita One", sans-serif;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons button:hover {
+            background-color: hotpink;
+        }
+
+        details {
+            background-color: #e67f9e;
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 15px;
+            width: 90%;
+            max-width: 1200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: 3px solid white
+        }
+
+        summary {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: ' ▼';
+            font-size: 20px;
+            color: white;
+            transition: transform 0.3s;
+        }
+
+        details[open] summary::after {
+            transform: rotate(-180deg);
+        }
+
+        .section-content {
+            margin-top: 15px;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .section-content img {
+            width: 80px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .section-content img:hover {
+            transform: scale(1.2);
+        }
+
+        .section-content li {
+            list-style: none;
+            text-align: center;
+        }
+
+        .back-home {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            text-align: center;
+        }
+
+        .arrow-icon {
+            width: 80px;
+            transform: scaleX(-1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .arrow-icon:hover {
+            transform: scaleX(-1) scale(1.1);
+        }
+
+        .caption {
+            margin-top: 5px;
+            font-family: 'Lilita One', sans-serif;
+            font-size: 16px;
+            color: #de5d83;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+    <div class="nav-buttons">
+        <button onclick="goToPage('aboutme.html')">About me</button>
+        <button onclick="goToPage('contacts.html')">Contacts</button>
+        <button onclick="goToPage('tech-stack.html')">Tech Stack</button>
+        <button onclick="goToPage('certifications.html')">Certifications</button>
+    </div>
+
+    <details>
+        <summary>Languages</summary>
+        <div class="section-content">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+            <img src="sql-icon.png" alt="SQL">
+        </div>
+    </details>
+
+    <details>
+        <summary>Environment / IDE</summary>
+        <div class="section-content">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+            <img src="oracle-apex.png" alt="Oracle APEX">
+        </div>
+    </details>
+
+    <details>
+        <summary>Tools & Platform</summary>
+        <div class="section-content">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+        </div>
+    </details>
+
+    <div class="back-home">
+        <div class="caption">Home Page</div>
+        <a href="index.html">
+            <img src="leftarrow.gif" alt="Left arrow" class="arrow-icon">
+        </a>
+    </div>
+
+    <div class="hearts">
+        <div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div>
+    </div>
+
+</body>
+</html>

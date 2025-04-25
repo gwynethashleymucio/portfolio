@@ -2,54 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home - Gwyneth Mucio</title>
+    <title>Contacts - Gwyneth Mucio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hearts.css">
 
     <style>
         body {
             background: linear-gradient(90deg, rgba(240,227,233,1) 0%, rgba(241,140,178,1) 100%);
             font-family: 'Lilita One', cursive;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
         }
 
-    /*for return to the homepage*/
+        .wrapper {
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+        }
 
-    .back-home {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        text-align: center;
-    }
+        .back-home {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            text-align: center;
+            z-index: 2;
+        }
 
-    .arrow-icon {
-        width: 80px;
-        transform: scaleX(-1);
-        cursor: pointer;
-        transition: transform 0.3s;
-    }
+        .arrow-icon {
+            width: 80px;
+            transform: scaleX(-1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
 
-    .arrow-icon:hover {
-        transform: scaleX(-1) scale(1.1);
-    }
+        .arrow-icon:hover {
+            transform: scaleX(-1) scale(1.1);
+        }
 
-    .caption {
-        margin-top: 5px;
-        font-family: 'Lilita One', sans-serif;
-        font-size: 16px;
-        color: #de5d83;
-    }
-    
-     /*buttons*/
-        .nav-buttons { 
+        .caption {
+            margin-top: 5px;
+            font-family: 'Lilita One', sans-serif;
+            font-size: 16px;
+            color: #de5d83;
+        }
+
+        .nav-buttons {
             text-align: center;
             margin-top: 20px;
             position: absolute;
             top: 20px;
             width: 100%;
+            z-index: 2;
         }
 
-        .nav-buttons button { 
+        .nav-buttons button {
             background-color: pink;
             color: white;
             border: none;
@@ -73,32 +82,75 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
             text-align: center;
             margin-top: 100px;
+            z-index: 2;
+        }
+
+        /* Contact Info Section */
+        #contact-info {
+            background-color: #fcd3e1;
+            border-radius: 30px;
+            padding: 30px;
+            margin: 50px auto;
+            max-width: 650px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            font-family: 'Lilita One', cursive;
+            color: #e04171;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        #contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #e04171;
+        }
+
+        #contact-info p {
+            font-size: 18px;
+            margin: 10px 0;
         }
 
         .contact-icons {
-    text-align: center;
-    margin-top: 40px;
+            margin-top: 20px;
+        }
+
+        .contact-icons a {
+            display: inline-block;
+            margin: 10px 15px;
+            transition: transform 0.2s;
+        }
+
+        .contact-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .contact-icons img {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        #contact-info p {
+        font-size: 18px;
+        margin: 10px 0;
     }
 
-    .contact-icons a {
-        display: inline-block;
-        margin: 10px 20px;
-        transition: transform 0.2s;
-    }
-
-    .contact-icons a:hover {
-        transform: scale(1.2);
-    }
-
-    .contact-icons img {
-        width: 60px;
-        height: 60px;
-        border-radius: 10px;
+    #contact-info .email, 
+    #contact-info .phone {
+        color: #d94c7a; /* Lighter color for email and phone */
     }
 
     </style>
 </head>
 <body>
+    <!-- Floating Hearts -->
+    <div class="hearts">
+        <div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div>
+    </div>
+
     <script>
         function goToPage(page) {
             window.location.href = page;
@@ -108,7 +160,7 @@
     <div class="nav-buttons">
         <button onclick="goToPage('aboutme.html')">About me</button>
         <button onclick="goToPage('contacts.html')">Contacts</button>
-        <button onclick="goToPage('blog.html')">Blog</button>
+        <button onclick="goToPage('tech-stack.html')">Tech Stack</button>
         <button onclick="goToPage('certifications.html')">Certifications</button>
     </div>
 
@@ -118,28 +170,30 @@
             <img src="leftarrow.gif" alt="Left arrow" class="arrow-icon">
         </a>
     </div>
-    
+
     <div class="home-text">Contacts</div>
 
-    <div class="contact-icons">
-        <a href="https://www.instagram.com/ashypcfc/" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-        </a>
-        
-        <!-- gmail gagawan ng paraan-->
-        <a href="gwynethashley.mucio@sdca.edu.ph">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
-        </a>
-
-        <!-- wala pa po sa phone blank-->
-        <a href="tel:+1234567890">
-            <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt="Phone">
-        </a>
-
-        <a href="https://github.com/gwynethashleymucio" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
-        </a>
-    </div>
+    <!-- 💖 Cute Rounded Contact Box -->
+    <section id="contact-info">
+        <h3>Contact Info:</h3>
+        <p><strong>Email:</strong> <span class="email">gwynethashley.mucio@sdca.edu.ph</span></p>
+        <p><strong>Phone:</strong> <span class="phone">+63 9754222395</span></p>
+        <p><strong>Social media and Links:</strong></p>
+    
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/ashypcfc/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+    
+            <a href="https://github.com/gwynethashleymucio" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+            </a>
+    
+            <a href="javascript:void(0);"> <!-- wala pa, magsa-signup pa lang-->
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
     
 </body>
 </html>
