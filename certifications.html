@@ -57,6 +57,7 @@
   background-color: rgb(248, 204, 211);
     }
 
+    
     .certification-card img {
     width: 100%;
     height: auto;
@@ -87,9 +88,13 @@
   margin-top: 40px;
 }
 
+.certification-card:hover {
+    transform: translateY(-13px); /* moves the card upward when mousepointer is in it*/
+}
+
 /*for certification zoom button image*/
 .modal {
-    display: none; /* Hidden by default */
+    display: none; /* hidden by default */
     position: fixed;
     z-index: 1;
     left: 0;
@@ -198,7 +203,7 @@
             <img src="msword-badge.png" alt="MS Word Certificate">
             <div class="certification-details">
                 <h5>Microsoft Office Specialist: Word Associate (Office 2019)</h5>
-                <p>Date: March 14, 2024</p>
+                <p>Date: March 13, 2024</p>
             </div>
         </div>
     
@@ -211,7 +216,6 @@
         </div>
     </div>
     
-      
 
 <!-- Modal/Zoom Function for images of the certification -->
 <div id="modal" class="modal" onclick="closeModal(event)">
@@ -225,6 +229,7 @@
     <div></div><div></div><div></div><div></div><div></div>
     <div></div><div></div><div></div><div></div><div></div>
 </div>
+
 
 </body>
 </html>
