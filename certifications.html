@@ -12,6 +12,9 @@
         body {
             background: linear-gradient(90deg, rgba(240,227,233,1) 0%, rgba(241,140,178,1) 100%);
             font-family: 'Lilita One', cursive;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
         }
 
         
@@ -91,6 +94,26 @@
 .certification-card:hover {
     transform: translateY(-13px); /* moves the card upward when mousepointer is in it*/
 }
+
+.certification-details button {
+    background-color: pink;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: "Lilita One", cursive;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.certification-details button:hover {
+    background-color: hotpink;
+    transform: scale(1.05);
+}
+
 
 /*for certification zoom button image*/
 .modal {
@@ -184,7 +207,7 @@
     </script>
 
     <div class="nav-buttons">
-        <button onclick="goToPage('aboutme.html')">About me</button>
+        <button onclick="goToPage('aboutme.html')">About Me</button>
         <button onclick="goToPage('contacts.html')">Contacts</button>
         <button onclick="goToPage('tech-stack.html')">Tech Stack</button>
         <button onclick="goToPage('certifications.html')">Certifications</button>
@@ -192,26 +215,37 @@
 
     <div class="back-home">
         <div class="caption">Home Page</div>
-        <a href="index.html">
+        <a href="home.html">
             <img src="leftarrow.gif" alt="Left arrow" class="arrow-icon">
         </a>
     </div>
     
     <div class="home-text">Certifications</div>
     <div class="certification-container">
-        <div class="certification-card" onclick="openModal('WORD_2.png')">
+        <div class="certification-card">
             <img src="msword-badge.png" alt="MS Word Certificate">
             <div class="certification-details">
                 <h5>Microsoft Office Specialist: Word Associate (Office 2019)</h5>
                 <p>Date: March 14, 2024</p>
+                <button onclick="openModal('WORD_2.png')">View Certificate</button>
             </div>
         </div>
     
-        <div class="certification-card" onclick="openModal('PPT_1.png')">
+        <div class="certification-card">
             <img src="ppt-badge.png" alt="MS PowerPoint Certificate">
             <div class="certification-details">
                 <h5>Microsoft Office Specialist: PowerPoint Associate (Office 2019)</h5>
                 <p>Date: May 30, 2024</p>
+                <button onclick="openModal('PPT_1.png')">View Certificate</button>
+            </div>
+        </div>
+    
+        <div class="certification-card">
+            <img src="DATABASE_3.png" alt="Database Certificate">
+            <div class="certification-details">
+                <h5>Database Certification</h5>
+                <p><br>Date: May 7, 2025</p>
+                <button onclick="openModal('DatabaseCertificate.png')">View Certificate</button>
             </div>
         </div>
     </div>
