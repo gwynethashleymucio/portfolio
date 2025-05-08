@@ -85,10 +85,29 @@
             color: #333;
         }
 
+        .intro {
+            text-align: left;
+            font-size: 18px;
+            color: #333;
+            margin-top: 30px;
+            padding: 10px;
+        }
+
+        .hiintro h1 {
+        color: #333;
+        text-align: left;
+        }
+
         .name {
         color: #D5006D; 
         }
 
+
+        .intro p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
 
         
 /* for see detail button*/
@@ -216,19 +235,6 @@
 </head>
 
 <body>
-
-
-    <script>
-        window.addEventListener('load', () => {
-            const introScreen = document.getElementById('introScreen');
-            setTimeout(() => {
-                introScreen.classList.add('hide'); // Trigger fade out after zoom
-                setTimeout(() => {
-                    introScreen.style.display = 'none'; // Remove intro screen
-                }, 1000);
-            }, 3000); // Wait for 3 seconds to let the zoom happen
-        });
-    </script>
 
     <script>
         function goToPage(page) {
