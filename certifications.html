@@ -8,6 +8,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Sigmar&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="hearts.css">
     
+    
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // para sa animation and transitions
+            anime({
+                targets: '.home-text',
+                opacity: [0, 1],
+                translateY: [50, 0],
+                duration: 3000,
+                easing: 'easeOutExpo'
+            });
+
+            anime({
+                targets: '.certification-card',
+                opacity: [0, 1],
+                translateY: [50, 0],
+                delay: anime.stagger(200),
+                duration: 2000,
+                easing: 'easeOutExpo'
+            });
+
+            // certification button hover animations
+            anime({
+                targets: '.certification-details button',
+                scale: [1, 1.1],
+                duration: 3000,
+                easing: 'easeInOutQuad',
+                loop: true,
+                direction: 'alternate'
+            });
+        });
+        
+</script>
+
+
     <style>
         body {
             background: linear-gradient(90deg, rgba(240,227,233,1) 0%, rgba(241,140,178,1) 100%);
@@ -185,19 +222,20 @@
 <body>
 
     <script>
+        
         function goToPage(page) {
             window.location.href = page;
         }
 
-        // Function to open the image in the modal
+        // function to open the image in the modal
         function openModal(imageSrc) {
             document.getElementById("modalImage").src = imageSrc;
             document.getElementById("modal").style.display = "block";
         }
 
-        // Function to close the image when clicking outside the image
+        // function to close the image when clicking outside the image
         function closeModal(event) {
-            // Check if the click happened outside the modal content
+            // check if the click happened outside the modal content
             if (event.target === document.getElementById("modal")) {
                 document.getElementById("modal").style.display = "none";
             }
