@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<!-- Redirect mobile users to home.html so that its fixed, but intro is removed, pero masbetter ----------------->
+<script>
+const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+if (isMobile) {
+    window.location.href = "home.html";
+}
+</script>
+<!---------------------------------------------------------------------------------------------------------------->
+
     <meta charset="UTF-8">
     <!-- Meta Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
