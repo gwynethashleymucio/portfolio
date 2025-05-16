@@ -2,36 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comments - Gwyneth Mucio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/comments.css">
     <link rel="stylesheet" href="hearts.css">
     
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <!-- For JSS Anime Script-->
+    <script src="JS/for-comments.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-
-            // for heading and caption
-            anime({
-                targets: '.caption',
-                opacity: [0, 1],
-                translateY: [50, 0],
-                duration: 3000,
-                easing: 'easeOutExpo'
-            });
-
-            // form container animation 
-            anime({
-                targets: '.form-container',
-                opacity: [0, 1],
-                translateY: [50, 0],
-                duration: 2000,
-                easing: 'easeOutExpo'
-            });
-        });
-    </script>
 
     <style>
         body {
@@ -41,127 +24,9 @@
             margin: 0;
             padding: 0;
         }
-    
-        h1 {
-            font-family: 'Lilita One', sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            font-size: 50px;
-            color: #333;
-        }
-    
-        .back-home {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            text-align: center;
-        }
-    
-        .arrow-icon {
-            width: 80px;
-            transform: scaleX(-1);
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-    
-        .arrow-icon:hover {
-            transform: scaleX(-1) scale(1.1);
-        }
-    
-        .captionhomepage {
-            margin-top: 5px;
-            font-family: 'Lilita One', sans-serif;
-            font-size: 16px;
-            color: #de5d83;
-        }
-    
-        .caption {
-            font-family: 'Lilita One', sans-serif;
-            font-size: 30px;
-            text-align: center;
-            margin-top: 50px;
-            color: #D5006D;
-        }
-    
-        .form-container {
-            width: 90%;
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            border: 3px solid pink;
-            border-radius: 12px;
-            background-color: #ffe4ec; /* Light pink background */
-            box-shadow: 0 0 15px rgba(213, 0, 109, 0.2);
-        }
-    
-        .form-container label {
-            font-size: 18px;
-            display: block;
-            margin: 10px 0 5px;
-            color: #D5006D;
-        }
-    
-            .form-container input {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 2px solid #ffb6c1;
-        border-radius: 8px;
-        font-size: 16px;
-        background-color: #fff0f5;
-        box-sizing: border-box;
-        height: auto; 
-    }
-
-        .form-container textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 2px solid #ffb6c1;
-            border-radius: 8px;
-            font-size: 16px;
-            background-color: #fff0f5;
-            resize: vertical;
-            height: 120px; 
-            box-sizing: border-box;
-            line-height: 1.5;
-            vertical-align: top; 
-        }
-
-        
-        .form-container textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 2px solid #ffb6c1;
-            border-radius: 8px;
-            font-size: 16px;
-            background-color: #fff0f5;
-            resize: vertical;
-            height: 120px; 
-            box-sizing: border-box;
-        }
-
-        .form-container button {
-            background-color: #de5d83;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-        }
-    
-        .form-container button:hover {
-            background-color: #D5006D;
-        }
-
-        
     </style>
-    
-    
 </head>
+
 <body>
     <h1>Comment</h1>
     <div class="caption">Leave your thoughts below!</div>

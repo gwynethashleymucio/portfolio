@@ -1,0 +1,210 @@
+  
+        /* Floating Animated Hearts */
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100vh;
+            pointer-events: none;
+        }
+
+        .hearts div {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center center / contain;
+            animation: floatHearts 8s linear infinite;
+        }
+
+        .hearts div:nth-child(1) { top: 20%; left: 10%; animation-duration: 9s; }
+        .hearts div:nth-child(2) { top: 30%; left: 80%; animation-duration: 7s; }
+        .hearts div:nth-child(3) { top: 60%; left: 50%; animation-duration: 10s; }
+        .hearts div:nth-child(4) { top: 70%; left: 20%; animation-duration: 8s; }
+        .hearts div:nth-child(5) { top: 40%; left: 60%; animation-duration: 6s; }
+        .hearts div:nth-child(6) { top: 75%; left: 70%; animation-duration: 8s; }
+        .hearts div:nth-child(7) { top: 80%; left: 85%; animation-duration: 7s; }
+        .hearts div:nth-child(9) { top: 90%; left: 90%; animation-duration: 10s; }
+
+        @keyframes floatHearts {
+            0% {
+                transform: scale(0.6) translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.4) translateY(-200px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .selfieimage {
+            text-align: center;
+            margin-top: 20px;
+            float: right;
+            margin-right: 50px;
+            margin-bottom: 20px; 
+        }
+
+            img {
+                width: 250px; 
+                height: 250px; 
+                border-radius: 50%;
+            }
+
+
+        h1 {
+            font-family: 'Lilita One', sans-serif;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 50px;
+            color: #333;
+        }
+
+        h2 {
+            font-family: 'Lilita One', sans-serif;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .intro {
+            text-align: left;
+            font-size: 18px;
+            color: #333;
+            margin-top: 30px;
+            padding: 10px;
+        }
+
+        .hiintro h1 {
+        color: #333;
+        text-align: left;
+        }
+
+        .name {
+        color: #D5006D; 
+        }
+
+
+        .intro p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        
+/* for see detail button*/
+        .button-link {
+        display: inline-block;
+        background-color: #D5006D;
+        color: white;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-family: 'Lilita One', sans-serif;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background-color 0.3s, transform 0.2s;
+        margin-top: 20px;
+    }
+
+    .button-link:hover {
+        background-color: hotpink;
+        transform: scale(1.05);
+    }
+
+    .button-link:active {
+        background-color: #D5006D;
+        transform: scale(1);
+    }
+
+
+    /* for see link buttons*/
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .nav-buttons button {
+            background-color: pink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-family: "Lilita One", sans-serif;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons button:hover {
+            background-color: hotpink;
+        }
+
+    /* for see detail button*/
+        .see-details {
+        position: relative;
+        text-align: left;
+        margin-top: 40px; 
+        padding-left: 50px; 
+        }
+
+    .button-link {
+        display: inline-block;
+        background-color: #f37b9f;
+        color: white;
+        padding: 20px 40px; 
+        font-size: 24px; 
+        font-family: 'Lilita One', sans-serif;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background-color 0.3s, transform 0.2s;
+        }
+
+    .button-link:hover {
+        background-color: hotpink;
+        transform: scale(1.1);
+        }
+
+    .button-link:active {
+        background-color: #D5006D;
+        transform: scale(1);
+        }
+    
+    /* for comment button*/
+    .comment-section {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    }
+
+    .comment-section .heart-gif {
+        width: 80px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    .comment-section .comment-button {
+        background-color: #D5006D;
+        color: white;
+        padding: 12px 30px;
+        font-size: 20px;
+        font-family: 'Lilita One', sans-serif;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .comment-section .comment-button:hover {
+        background-color: #FF66B2; /* Lighter pink on hover */
+        transform: scale(1.05);
+    }

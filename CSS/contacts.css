@@ -1,0 +1,159 @@
+   .wrapper {
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .back-home {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .arrow-icon {
+            width: 80px;
+            transform: scaleX(-1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .arrow-icon:hover {
+            transform: scaleX(-1) scale(1.1);
+        }
+
+        .caption {
+            margin-top: 5px;
+            font-family: 'Lilita One', sans-serif;
+            font-size: 16px;
+            color: #de5d83;
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .nav-buttons button {
+            background-color: pink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-family: "Lilita One", sans-serif;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons button:hover {
+            background-color: hotpink;
+        }
+
+        .home-text {
+            font-size: 60px;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            margin-top: 100px;
+            z-index: 2;
+        }
+
+        /* Contact Info Section */
+        #contact-info {
+            background-color: #fcd3e1;
+            border-radius: 30px;
+            padding: 30px;
+            margin: 50px auto;
+            max-width: 650px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            font-family: 'Lilita One', cursive;
+            color: #e04171;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        #contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #e04171;
+        }
+
+        #contact-info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contact-icons {
+            margin-top: 20px;
+        }
+
+        .contact-icons a {
+            display: inline-block;
+            margin: 10px 15px;
+            transition: transform 0.2s;
+        }
+
+        .contact-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .contact-icons img {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        #contact-info p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    #contact-info .email, 
+    #contact-info .phone {
+        color: #d94c7a; /* Lighter color for email and phone */
+    }
+
+    /*for comments*/
+        
+    .comment-section {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .heart-gif {
+        width: 50px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .comment-button {
+        background-color: #fac8d8;
+        color: #e04171;
+        padding: 12px 25px;
+        font-size: 18px;
+        font-family: 'Lilita One', sans-serif;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .comment-button:hover {
+        background-color: #FF66B2;
+        transform: scale(1.05);
+    }

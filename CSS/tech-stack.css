@@ -1,0 +1,105 @@
+   .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .nav-buttons button {
+            background-color: pink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-family: "Lilita One", sans-serif;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons button:hover {
+            background-color: hotpink;
+        }
+
+        .tech-section {
+            background-color: #e67f9e;
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 15px;
+            width: 90%;
+            max-width: 1200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: 3px solid white;
+            color: white;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+        }
+
+        .section-item {
+            text-align: center;
+        }
+
+        .section-item img {
+            width: 80px;
+            height: 85px; /*changed height fixed for netbeans*/
+            transition: transform 0.3s;
+        } 
+
+        .section-item img:hover {
+            transform: scale(1.2);
+        }
+
+        .section-item .label {
+            margin-top: 5px;
+            font-size: 16px;
+            color: white;
+        }
+
+        .home-text {
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .back-home {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            text-align: center;
+        }
+
+        .arrow-icon {
+            width: 80px;
+            transform: scaleX(-1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .arrow-icon:hover {
+            transform: scaleX(-1) scale(1.1);
+        }
+
+        .caption {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #de5d83;
+        }

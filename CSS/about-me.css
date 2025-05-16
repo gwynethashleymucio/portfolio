@@ -1,0 +1,118 @@
+
+    .home-text {
+      font-size: 60px;
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      margin-top: 100px;
+      z-index: 2;
+    }
+
+    .nav-buttons {
+      text-align: center;
+      margin-top: 20px;
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .nav-buttons button {
+      background-color: pink;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-family: "Lilita One", sans-serif;
+      margin: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s;
+    }
+
+    .nav-buttons button:hover {
+      background-color: hotpink;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 80px auto 40px;
+      padding: 20px;
+      gap: 30px;
+    }
+
+    .selfieimage {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .selfieimage img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .about {
+      flex: 2;
+      min-width: 280px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .about h2 {
+      text-align: center;
+      font-size: 50px;
+      margin-top: 5px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      color: white;
+    }
+
+    .about p {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+      border-radius: 25px;
+      font-size: 23px;
+      font-family: 'Chewy', cursive;
+      color: hsl(342, 42%, 59%);
+      margin-top: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .back-home {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      text-align: center;
+    }
+
+    .arrow-icon {
+      width: 80px;
+      transform: scaleX(-1);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .arrow-icon:hover {
+      transform: scaleX(-1) scale(1.1);
+    }
+
+    .caption {
+      margin-top: 5px;
+      font-family: 'Lilita One', sans-serif;
+      font-size: 16px;
+      color: #de5d83;
+    }
+
+    .hearts {
+      text-align: center;
+      margin-top: 40px;
+    }
