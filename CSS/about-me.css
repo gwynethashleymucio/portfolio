@@ -15,6 +15,7 @@
       top: 20px;
       width: 100%;
       z-index: 2;
+      padding-bottom: 50px;
     }
 
     .nav-buttons button {
@@ -47,6 +48,7 @@
     }
 
     .selfieimage {
+      margin-top: 40px;
       flex: 1;
       min-width: 280px;
       text-align: center;

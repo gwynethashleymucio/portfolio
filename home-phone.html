@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- Redirect mobile users to home.html so that its fixed, but intro is removed, pero masbetter ----------------->
-<script>
-const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-if (isMobile) {
-    window.location.href = "forphone/home-phone.html";
-}
-</script>
-<!---------------------------------------------------------------------------------------------------------------->
-
     <meta charset="UTF-8">
     <!-- Meta Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +8,14 @@ if (isMobile) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/home.css">
     <!-- For Hearts Animation-->
     <link rel="stylesheet" href="hearts.css">
-    <!-- For Intro-->
-    <link rel="stylesheet" href="intro.css">
 
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+<!-- For JSS Anime Script-->
+<script src="JS/for-home.js"></script>
 
     <style>
         body {
@@ -33,27 +24,13 @@ if (isMobile) {
             overflow-x: hidden;
             margin: 0;
             padding: 0;
+            padding-bottom: 250px; 
         }
+    
     </style>
 </head>
 
 <body>
-
-    <div id="introScreen">
-        <img src="intro.jpg" alt="Intro Image" class="intro-image">
-    </div>
-
-    <script>
-        window.addEventListener('load', () => {
-            const introScreen = document.getElementById('introScreen');
-            setTimeout(() => {
-                introScreen.classList.add('hide'); // trigger fade out after zoom
-                setTimeout(() => {
-                    introScreen.style.display = 'none'; // remove intro screen
-                }, 1000);
-            }, 3000); // wait for 3 seconds to let the zoom happen
-        });
-    </script>
 
     <script>
         function goToPage(page) {
@@ -87,21 +64,18 @@ if (isMobile) {
         
         <div style="position: fixed; bottom: 20px; left: 20px; display: flex; align-items: center;">
             
-            <div class="comment-section">
-                <!-- Heart GIF -->
-                <img src="heart.gif" alt="Heart animation" class="heart-gif">
-            
-                <!-- Comment Button -->
-                <!-- Blank pa yung comments.html-->
-                <button onclick="goToPage('comments.html')" class="comment-button">
-                    Leave a Comment 💬
-                </button>
-            </div>
+<div class="comment-section" style="margin-top: 40px; display: flex; align-items: center;">
+    <img src="heart.gif" alt="Heart animation" class="heart-gif" style="width: 80px; margin-right: 20px;">
+    <button onclick="goToPage('comments.html')" class="comment-button">
+        Leave a Comment 💬
+    </button>
+</div>
             
             <div class="hearts">
                 <div></div><div></div><div></div><div></div><div></div>
                 <div></div><div></div><div></div><div></div><div></div>
             </div>
+
 
 </body>
 </html>
