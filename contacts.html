@@ -24,6 +24,7 @@
             overflow-x: hidden;
             margin: 0;
             padding: 0;
+            padding-bottom: 100px;
         }
 
     </style>
@@ -36,11 +37,7 @@
         <div></div><div></div><div></div><div></div><div></div>
     </div>
 
-    <script>
-        function goToPage(page) {
-            window.location.href = page;
-        }
-    </script>
+    <script src="JS/goToPage.js"></script>
 
     <div class="nav-buttons">
         <button onclick="goToPage('about-me.html')">About Me</button>
@@ -59,21 +56,26 @@
     <div class="home-text">Contacts</div>
 
     <!-- 💖 Cute Rounded Contact Box -->
-    <section id="contact-info">
-        <h3>Contact Info:</h3>
-        <p><strong>Email:</strong> <span class="email">gwynethashley.mucio@sdca.edu.ph</span></p>
-        <p><strong>Phone:</strong> <span class="phone">+63 975 4422 395</span></p>
-        <p><strong>Social media and Links:</strong></p>
-    
-        <div class="contact-icons">
+<section id="contact-info">
+    <h3>Contact Info:</h3>
+    <div class="contact-icons" style="display: flex; justify-content: center; gap: 40px;">
+        <div style="text-align: center;">
             <a href="https://github.com/gwynethashleymucio" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" width="40">
             </a>
-    
-            <a href="javascript:void(0);"> <!-- wala pa, magsa-signup pa lang-->
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-            </a>
+            <div><strong>GitHub</strong></div>
         </div>
+
+        <div style="text-align: center;">
+            <a href="javascript:void(0);">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40">
+            </a>
+            <div><strong>LinkedIn</strong></div>
+        </div>
+    </div>
+    
+        <p><br>Leave a comment down below to contact me 💗</p>
+
     </section>
 
     <!-- Leave a Comment Section -->

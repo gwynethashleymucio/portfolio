@@ -2,16 +2,9 @@
 <html lang="en">
 <head>
 
-<!-- Redirect mobile users to home.html so that its fixed, but intro is removed, pero masbetter ----------------->
-<script>
-const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-if (isMobile) {
-     window.location.href = "home.html";
-}
-</script>
-<!---------------------------------------------------------------------------------------------------------------->
-
+    <!-- Redirect mobile users to home.html so that its fixed, but intro is removed, pero masbetter -->
+    <script src="JS/mobile-redirect.js"></script>
+    <!------------------------------------------------------------------------------------------------>
     <meta charset="UTF-8">
     <!-- Meta Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,23 +36,8 @@ if (isMobile) {
         <img src="intro.jpg" alt="Intro Image" class="intro-image">
     </div>
 
-    <script>
-        window.addEventListener('load', () => {
-            const introScreen = document.getElementById('introScreen');
-            setTimeout(() => {
-                introScreen.classList.add('hide'); // trigger fade out after zoom
-                setTimeout(() => {
-                    introScreen.style.display = 'none'; // remove intro screen
-                }, 1000);
-            }, 3000); // wait for 3 seconds to let the zoom happen
-        });
-    </script>
-
-    <script>
-        function goToPage(page) {
-            window.location.href = page;
-        }
-    </script>
+    <!-- For intro animation and hide + goToPage function for buttons -->
+    <script src="JS/main.js"></script>
 
     <div class="nav-buttons">
         <button onclick="goToPage('about-me.html')">About Me</button>
@@ -92,7 +70,6 @@ if (isMobile) {
                 <img src="heart.gif" alt="Heart animation" class="heart-gif">
             
                 <!-- Comment Button -->
-                <!-- Blank pa yung comments.html-->
                 <button onclick="goToPage('comments.html')" class="comment-button">
                     Leave a Comment 💬
                 </button>
